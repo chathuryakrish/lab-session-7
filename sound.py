@@ -45,7 +45,9 @@ if __name__ == '__main__':
             dist = distance()
             print ("Measured Distance = %.1f cm" % dist)
             time.sleep(1)
- 
+            if(dist>=100):
+                print("distance is more than 100,bye...")
+                break
         # Reset by pressing CTRL + C
     except KeyboardInterrupt:
         print("Measurement stopped by User")
